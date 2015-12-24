@@ -1,0 +1,20 @@
+<script type="text/javascript">
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+        dayClick: function(date) {
+        	
+            alert('Clicked on: ' + date.format());
+        }
+    })
+
+});
+
+
+</script>
+<h1>Welcome System seeker</h1>
+
+<div id='calendar'></div>
